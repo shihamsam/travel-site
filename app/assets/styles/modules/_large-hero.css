@@ -1,0 +1,60 @@
+.large-hero{
+    position: relative;
+    border-bottom: 10px solid $mainBlue;
+
+    &__image{
+        display: block;
+    }
+
+    &__text-content{
+        position: absolute;
+        top:50%;
+        left: 0;
+        text-align: center;
+        width:100%;
+        transform: translateY(-50%);
+    
+    }
+
+
+    &__title{
+        font-weight: 300;
+        color: $mainBlue;
+        margin: 0;
+        font-size: 3rem;
+        
+        @mixin atSmall {
+            font-size: 4.8rem;        
+        }
+
+        
+    }
+
+    &__subtitle{
+        font-weight: 300;
+        color: $mainBlue;
+        font-size: 1.6rem;
+        margin: 0;
+
+        @mixin atSmall {
+            font-size: 2.9rem;
+        
+        }       
+
+    }
+
+    &__description{
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 100;
+        width: 20rem;
+        margin: 0 auto;
+        @mixin atSmall {
+            font-size: 1.5rem;
+            width: 30rem;
+        }
+
+    }
+}
+
+ 
