@@ -1114,9 +1114,13 @@ a {
 @media (min-width: 800px) {
 
 .site-header {
-        background-color: rgba(47,85,114, 0.3)
+        background-color: rgba(47,85,114, 0.3);
+        position: fixed
 
 }
+        .site-header--dark {
+            background-color: rgba(23, 51, 72, .85);
+        }
     }
 
 @media (min-width: 800px) {
@@ -1145,9 +1149,16 @@ a {
 .site-header__logo {
             left: auto;
             -webkit-transform: translateX(0);
-                    transform: translateX(0)
+                    transform: translateX(0);
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out
 
     }
+
+            .site-header--dark .site-header__logo {
+                -webkit-transform: scale(.56);
+                        transform: scale(.56);
+            }
     }
 
 .site-header__logo__graphic {
@@ -1303,12 +1314,16 @@ a {
         background-color: rgba(47,85,114, 0.5);
     }
 
-@media (min-width: 530px) {
+@media (min-width: 800px) {
 
 .primary-nav a {
             padding: 12px 0;
             background-color: transparent
     }
+
+            .primary-nav a.is-current-link {
+                color: #fabb69;
+            }
     }
 
 .reveal-item {

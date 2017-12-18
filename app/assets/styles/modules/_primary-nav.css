@@ -31,10 +31,13 @@
         display: block;
         background-color: rgba($mainBlue, 0.5);
 
-        @mixin atSmall {
+        @mixin atMedium {
             padding: 12px 0;
             background-color: transparent;
 
+            &.is-current-link {
+                color: #fabb69;
+            }
         
         }
     }
