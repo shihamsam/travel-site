@@ -8,7 +8,7 @@ gulp.task('watch', function(){
         server:{
             baseDir: 'app'
         },
-        notify: false
+        notify: true
     })
 
     watch('./app/index.html', function(){
